@@ -1,4 +1,13 @@
+
 /node_modules
 Homestead.yaml
 Homestead.json
 .env
+.vagrant
+
+
+
+/.idea
+/atlassian-ide-plugin.xml
+/vendor
+/composer.lock

@@ -14,6 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/home', function () {
+    return view('test');
+});
+Route::get('/chris', function () {
+    return view('chris');
+});
+Route::get('/users', 'UsersController@index');
+Route::get('/profile',
+    ['as' => 'get_profile', 'uses' => 'Profile@index']);
+
+Route::post('/profile',
+    ['as' => 'profile_store', 'uses' => 'Profile@store']);
+Route::get('/chris2',  'ChrisController@chris2');
 
 /*
 |--------------------------------------------------------------------------
